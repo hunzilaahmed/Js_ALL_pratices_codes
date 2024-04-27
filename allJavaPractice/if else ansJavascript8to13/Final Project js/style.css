@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0px 20px 0px;
+}
+.input-section label {
+  font-weight: 700;
+  margin-left: 40px;
+}
+.input-section button {
+  width: 80px;
+  border: none;
+  background-color: rgb(83, 102, 7);
+
+  color: white;
+  border-radius: 30px;
+}
+.input-section button:hover {
+  transition-duration: 1.1s;
+  transform: scale(0.9);
+  background-color: rgb(147, 194, 39);
+}
+table {
+  width: 90%;
+  margin: 20px;
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+th,
+td {
+  /* border: 1px solid black; */
+  /* background-color: black; */
+  padding: 5px;
+}
+th {
+  background-color: rgb(43, 180, 62);
+
+  color: white;
+}
+td{
+  font-weight: 700;
+}
+.delete-btn{
+  width: 80px;
+  border: none;
+  background-color: rgb(151, 23, 23);
+  color: white;
+  border-radius: 30px;
+}

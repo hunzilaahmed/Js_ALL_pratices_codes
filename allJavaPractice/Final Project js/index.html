@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Expenses Tracker</title>
+</head>
+
+<body>
+    <!-- header Section -->
+    <header>
+        <div class="firstdiv">
+            <img width="100px" src="./Images/pngwing.com.png" alt="" class="img-set" srcset="">
+            <h1>Expense Management System</h1>
+        </div>
+        <div class="custom-shape-divider-bottom-1707175883">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
+    <!-- header Section End -->
+    <!-- Hero Section Start -->
+    <div class="input-section">
+        <label for="">Category :</label>
+        <select name="" id="Category_select">
+            <option value="" disabled selected> Select any categories</option>
+            <option value="College Fee">College Fee</option>
+            <option value="School Fee">School Fee</option>
+            <option value="GYM Fee">GYM Fee</option>
+            <option value="Rent">Rent </option>
+            <option value="Shopping">Shopping</option>
+            <option value="Transport">Transport</option>
+        </select>
+        <label for="">Amount :</label>
+        <input id="amount_input" type="number">
+        <label for="Date">Date :</label>
+        <input type="date" name="" id="date_input">
+        <button id="add_btn">ADD</button>
+
+    </div>
+    <div class="allmain">
+        <div>
+            <div class="sect">
+                <h2 class="exp"> Expenses List</h2>
+                <button class="delete_btn" id="delete_btn"> Delete All</button>
+            </div>
+            <table>
+                <thead>
+                    <tr class="expenses-list">
+                        <th class="cntr">Category</th>
+                        <th class="cntr">Amount</th>
+                        <th class="cntr">Date</th>
+                        <th class="cntr">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="cntr">Total Amount</td>
+                        <td id="total_amount"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
